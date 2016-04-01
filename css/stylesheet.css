@@ -92,7 +92,7 @@ body {
 .description_container {
 	width: 1280px;
 	margin: auto;
-	height: 350px;
+	height: 270px;
 	text-align: center;
 }
 
@@ -129,10 +129,70 @@ body {
 	width:50%;
 }
 
-.form{
-	height: 590px;
+.form_container {
+	width: 1200px;
+	height: 450px;
+	background-color: #f7f7f8;
+	padding: 30px;
+	margin: auto;
+	margin-bottom: 80px;
+	box-shadow: 5px 5px 5px 0px rgba(210, 217, 217, 0.75);
 }
-
+.form_container p{
+	margin-bottom: 35px;
+	font-family: AvenirNextLTPro-Regular;
+	font-size: 30px;
+	color: #555555;
+}
+input, label {
+	display: block;
+}
+label {
+	margin-left: 15px;
+	padding: 6px;
+	font-family: AvenirNextLTPro-Regular;
+	font-size: 16px;
+	color: #555555;
+}
+input[type=text] {
+	width: 500px;
+	height: 36px;
+	padding: 12px 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	border: solid 1px #c2cecc;
+	background-color: #fff;
+	color: #555555;
+	font-family: AvenirNextLTPro-Regular;
+	font-size: 16px;
+}
+input[type=submit] {
+	background-color: #cfd7d6;
+	border-radius: 6px;
+	border: none;
+	padding: 16px;
+	font-family: AvenirNextLTPro-Bold;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: auto;
+	width: 220px;
+}
+form {
+	display: block;
+}
+.form_container p {
+	text-align: center;
+}
+.nume_email {
+	float:left;
+	margin-bottom: 20px;
+}
+.telefon_data {
+	float:right;
+	margin-bottom: 20px;
+}
 
 .footer {
 	min-width: 980px;

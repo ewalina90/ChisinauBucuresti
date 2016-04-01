@@ -1,4 +1,21 @@
-<!DOCTYPE html>
+<?php
+
+if($_POST["submit"]) {
+    $recipient="evelina.cretu@gmail.com";
+    $subject="Rezervarea biletului Chisinau-Bucuresti";
+    $firstname=$_POST["firstname"];
+    $email=$_POST["email"];
+    $telefon=$_POST["telefon"];
+    $data=$_POST["data"];
+
+    $mailBody="Name: $firstname\nEmail: $email\nTelefon: $telefon\nData: $data\n\n";
+
+    mail($recipient, $subject, $mailBody, "From: $firstname <$email>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?><!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -43,8 +60,22 @@
 	</section>
 	<section class="form">
 		<div class="form_container">
-			<form>
-				
+			<p>REZERVEAZA ACUM!</p>
+
+			<form action="index.php">
+				<div class="nume_email">
+					<label for="fname">Nume:</label>
+					<input type="text" name="firstname">
+					<label for="email">Email:</label>
+					<input type="text" name="email">
+				</div>
+				<div class="telefon_data">
+					<label for="telefon">Telefon:</label>
+					<input type="text" name="telefon">
+					<label for="data">Data:</label>
+					<input type="text" name="data">
+				</div>
+				<input type="submit" value="Expediaza">
 			</form>
 		</div>
 	</section>
